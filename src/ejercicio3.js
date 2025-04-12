@@ -1,6 +1,3 @@
 const radio = 7.5;
-const calcularArea = (r) => {
-    const area = Math.PI * r * r;
-    console.log(`El area del circulo con radio ${r} es: ${area.toFixed(2)}`);
-};
-calcularArea(radio);
+const area = Math.PI * Math.pow(radio, 2);
+console.log(`El área del círculo con radio ${radio} es: ${area}`);

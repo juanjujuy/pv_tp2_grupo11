@@ -1,18 +1,19 @@
-const calcularMayor = (numero1, numero2) => {
-    if (isNaN(numero1) || isNaN(numero2)) {
+const numero1 = parseFloat(prompt("Ingrese el primer número:"));
+const numero2 = parseFloat(prompt("Ingrese el segundo número:"));
+
+const calcularMayor = (n1, n2) => {
+  if (isNaN(n1) || isNaN(n2)) {
     alert("Ambos valores deben ser números válidos.");
     return;
-    }
-    
-    if (numero1 > numero2) {
-      console.log(`${numero1} es mayor que ${numero2}`);
-    } else if (numero2 > numero1) {
-      console.log(`${numero2} es mayor que ${numero1}`);
-    } else {
-      console.log(`${numero1} y ${numero2} son iguales`);
-    }
   }
-  
-  calcularMayor(15, 8);
-  calcularMayor(3, 20);
-  calcularMayor(7, 7);
+
+  if (n1 > n2) {
+    alert(`${n1} es mayor que ${n2}`);
+  } else if (n2 > n1) {
+    alert(`${n2} es mayor que ${n1}`);
+  } else {
+    alert(`${n1} y ${n2} son iguales`);
+  }
+};
+
+calcularMayor(numero1, numero2);

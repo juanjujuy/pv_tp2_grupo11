@@ -1,4 +1,9 @@
 const calcularMayor = (numero1, numero2) => {
+    if (isNaN(numero1) || isNaN(numero2)) {
+    alert("Ambos valores deben ser números válidos.");
+    return;
+    }
+    
     if (numero1 > numero2) {
       console.log(`${numero1} es mayor que ${numero2}`);
     } else if (numero2 > numero1) {

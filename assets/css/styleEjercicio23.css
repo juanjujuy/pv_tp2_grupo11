@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+}
+body{
+    background-color: aquamarine;
+}
+h2{
+    background-color: blanchedalmond;
+    padding: 20px;
+    margin: 10px;
+    border: 10px solid;
+    border-color: orange;
+    text-align: center;
+}
+label{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+label, input{
+    background-color: rgb(241, 230, 199);
+}
+
+.fin{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(161, 12, 12);
+
+}
